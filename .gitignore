@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+
+# Banco local gerado durante a execução
+data/*.db
+
+# Arquivos temporários de probe/debug
+scripts/probe_*.py

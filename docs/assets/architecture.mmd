@@ -1,0 +1,16 @@
+flowchart LR
+    A[Upload de PDF ou imagem] --> B[Ingestor]
+    B --> C{PDF tem texto?}
+    C -->|Sim| D[Extração nativa]
+    C -->|Não| E[OCR]
+    D --> F[Texto por página]
+    E --> F
+    F --> G[Segmentador de cláusulas]
+    G --> H[Agente de extração estruturada]
+    H --> I[Validador de schema e evidências]
+    I --> J[(SQLite)]
+    J --> K[Consulta por categoria]
+    J --> L[Comparador de duas apólices]
+    L --> M[Resumo explicável]
+    K --> N[Interface Streamlit]
+    M --> N

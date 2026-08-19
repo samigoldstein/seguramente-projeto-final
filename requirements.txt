@@ -1,0 +1,9 @@
+pypdf>=4.0,<7
+pandas>=2.2,<3
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+streamlit>=1.36,<2
+pytesseract>=0.3,<1
+Pillow>=10,<13
+reportlab>=4.0,<5
+pytest>=8,<9
